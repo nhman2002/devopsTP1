@@ -16,6 +16,7 @@ git commit -m "Etape 5"
 git push --set-upstream origin Etape5
 git checkout -b feature1
 git status
+git add .
 git commit -m "init feature1"
 git push --set-upstream origin feature1 
 
