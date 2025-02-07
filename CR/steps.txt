@@ -47,6 +47,18 @@ git add CR/rebase.txt
 git commit -m "Ajout de l'explication sur la suppression des branches dans rebase.txt"
 git push origin main
 
+git add clean_history/file1.txt
+git commit -m "Add file1.txt"
+
+git add clean_history/file2.txt
+git commit -m "Add file2.txt"
+
+git add clean_history/file3.txt
+git commit -m "Add file3.txt"
+
+git rebase -i HEAD~3
+
+git push --force
 
 - Etape 4:
 
