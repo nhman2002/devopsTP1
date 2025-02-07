@@ -11,9 +11,13 @@ git add AUTHORS.md
 git commit -m "Etape 3"
 git push
 git push --set-upstream origin Etape3
-
-
-
+git add . 
+git commit -m "Etape 5"
+git push --set-upstream origin Etape5
+git checkout -b feature1
+git status
+git commit -m "init feature1"
+git push --set-upstream origin feature1 
 
 
 - Etape 4:
