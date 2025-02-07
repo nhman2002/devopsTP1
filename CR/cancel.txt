@@ -1,0 +1,13 @@
+J'ai ajouté une phrase à conflict.txt indiquant que je ne sais pas comment résoudre les conflits.
+Puis j'ai réalisé que je sais comment résoudre les conflits, j'ai donc décidé d'annuler mes modifications à l'aide de git reset.
+
+
+
+
+Présentation de la commande git reset
+La commande git reset est utilisée pour déplacer le HEAD (pointeur de branche actuel) et l'index (zone de préparation) vers un état différent dans votre historique de validation. Il existe trois types principaux :
+
+--soft : déplace le HEAD vers un commit précédent mais conserve les modifications dans la zone de préparation.
+--mixed (par défaut) : déplace le HEAD vers un commit précédent et les modifications sont conservées dans votre répertoire de travail (mais pas préparées).
+--hard : réinitialise le HEAD, l'index et le répertoire de travail sur le commit spécifié. Cela signifie que votre zone de préparation et votre répertoire de travail sont tous deux effacés et rétablis sur le commit choisi.
+Dans votre cas, nous avons utilisé --hard, qui rétablit le répertoire de travail et la zone de préparation, annulant ainsi efficacement les modifications.
