@@ -1,0 +1,2 @@
+Modifications dans master et feature1 ont créé un conflit dans le fichier steps.txt.
+Nous avons fusionné les modifications manuellement.
