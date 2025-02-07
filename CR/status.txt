@@ -1,1 +1,10 @@
 Étape 10 : Explication de git status
+
+
+1. **Changes to be committed** : Les fichiers ajoutés avec `git add` qui sont prêts à être commités.
+2. **Changes not staged for commit** : Les fichiers modifiés mais pas encore ajoutés à l'index avec `git add`.
+3. **Untracked files** : Les fichiers qui ne sont pas encore suivis par Git.
+
+Un fichier ne peut pas apparaître dans deux catégories à la fois. Lorsqu'un fichier est ajouté avec `git add`, 
+il passe dans la catégorie "Changes to be committed" et n'apparaît plus dans "Changes not staged for commit". 
+De même, un fichier non suivi apparaît uniquement dans la catégorie "Untracked files" jusqu'à ce qu'il soit ajouté à l'index.
