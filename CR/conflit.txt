@@ -11,3 +11,6 @@ Modifications dans feature1
 
 
 I don’t know how to resolve conflicts
+
+
+changing something
