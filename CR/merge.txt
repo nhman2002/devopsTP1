@@ -1,0 +1,8 @@
+1. Git commmand
+At branch feature1: 
+    git add .
+    git commit -m "Ajout du fichier branches.txt"
+    git push --set-upstream origin feature1
+    git checkout main
+At branch main:
+    git merge feature1
