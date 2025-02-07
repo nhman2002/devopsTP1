@@ -1,0 +1,28 @@
+Étape 11 : Explication du rebase et fast-forward
+
+### Commandes utilisées :
+1. Vérification des commits dans master et feature2 :
+   - git checkout master
+   - git log --oneline --graph --decorate --all
+   - git checkout feature2
+   - git log --oneline --graph --decorate --all
+
+2. Rebase de feature2 sur master :
+   - git checkout feature2
+   - git rebase master
+
+   En cas de conflit :
+   - Résolution manuelle des fichiers en conflit
+   - git add fichier_conflit
+   - git rebase --continue
+
+3. Fast-forward de master vers feature2 :
+   - git checkout master
+   - git merge --ff-only feature2
+
+### Différences entre `merge` et `rebase`
+- `merge` crée un commit de fusion et conserve l'historique de la branche fusionnée.
+- `rebase` intègre les commits de la branche cible (master) dans la branche actuelle (feature2), puis replace les commits de feature2 au-dessus. Cela produit un historique plus linéaire.
+
+### Définition de fast-forward
+Le fast-forward se produit lorsque la branche cible (`master`) n'a pas de nouveaux commits par rapport à la branche rebasée (`feature2`). Git avance simplement le pointeur de `master` vers la dernière version sans créer de commit de fusion.
