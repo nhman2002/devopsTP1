@@ -25,6 +25,7 @@ git pull
 
 
 
+
 - Etape 4:
 
 L’upstream est la branche distante associée à une branche locale dans Git. Elle permet à Git de savoir vers où envoyer (git push) et d’où récupérer (git pull) les mises à jour.
