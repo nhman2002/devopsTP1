@@ -1,0 +1,15 @@
+### Configuration de .gitignore pour ignorer certains fichiers
+
+Nous voulons que Git ignore :
+1. Tous les fichiers avec une extension `.pdf`
+2. Tout le contenu du dossier `tmp` situé à la racine du dépôt
+
+Pour cela, nous avons ajouté les règles suivantes dans le fichier `.gitignore` à la racine :
+
+    # Ignorer tous les fichiers PDF
+    *.pdf
+
+    # Ignorer le dossier tmp et tout son contenu
+    /tmp/
+
+Cela empêche Git de suivre ces fichiers et répertoires, même s'ils existent localement.

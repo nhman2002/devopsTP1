@@ -24,6 +24,28 @@ git status
 git pull
 
 
+git checkout -b feature2
+git checkout feature2
+git status
+git add statusTest/testFile1.txt
+git status
+git add CR/status.txt
+git commit -m "Ajout de status.txt expliquant les catégories de git status"
+git checkout main
+git checkout feature2
+git rebase main
+git checkout main
+git merge --ff-only feature2
+git add .
+git commit -m "Ajout de rebase.txt expliquant le rebase et fast-forward"
+git push origin main 
+
+git branch -d feature2
+git branch -D feature2
+git push origin --delete feature2
+git add CR/rebase.txt
+git commit -m "Ajout de l'explication sur la suppression des branches dans rebase.txt"
+git push origin main
 
 
 - Etape 4:
