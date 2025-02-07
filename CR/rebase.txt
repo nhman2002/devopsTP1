@@ -26,3 +26,19 @@
 
 ### Définition de fast-forward
 Le fast-forward se produit lorsque la branche cible (`master`) n'a pas de nouveaux commits par rapport à la branche rebasée (`feature2`). Git avance simplement le pointeur de `master` vers la dernière version sans créer de commit de fusion.
+
+
+### Suppression de la branche feature2
+
+Après avoir effectué un rebase et un fast-forward sur master, la branche feature2 devient inutile.
+Nous pouvons la supprimer en local avec la commande :
+
+    git branch -d feature2
+
+Si la branche n'a pas été fusionnée, Git affiche un message d’erreur. Dans ce cas, on peut forcer la suppression avec :
+
+    git branch -D feature2
+
+Ensuite, pour supprimer la branche feature2 sur le serveur distant :
+
+    git push origin --delete feature2
