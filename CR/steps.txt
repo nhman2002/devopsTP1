@@ -19,6 +19,10 @@ git status
 git add .
 git commit -m "init feature1"
 git push --set-upstream origin feature1 
+git checkout main
+git status
+git pull
+
 
 
 - Etape 4:
