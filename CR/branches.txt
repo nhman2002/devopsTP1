@@ -1,0 +1,29 @@
+1. Quelle commande avez-vous utilisée pour créer une nouvelle branche ?
+-> git command: git checkout -b <new branch name>
+
+2. Quelle commande permet de connaître  la liste des branches ?
+-> git command:git branch -vv
+```
+PS C:\Users\Legion\Documents\GitHub\devopsTP1> git branch -vv
+  Etape3   0771dcf [origin/Etape3] Etape 3
+  Etape5   d820701 [origin/Etape5] Etape 5
+  feature1 23b81c5 [origin/feature1] init feature1
+* main     f972cdc [origin/main] Merge pull request #3 from nhman2002/feature1
+```
+
+3. Comment savoir dans quelle branche on travaille ?
+-> git command: git branch ou git branch -vv ou git status
+
+4. How do you change branches?
+-> git command: git checkout <branch name>
+-> make sure that i'm stage all the changes before switching branches or do a commit. I also can change branches with the help of git graph extension in vscode.
+
+5. Quelles différences constatez vous dans votre répertoire de travail lorsque vous passez de la branche feature1 à la branche master.
+-> When i switch from the feature1 branch to the master branch, the changes that i made in the feature1 branch are not visible in the master branch. 
+The changes are only visible in the feature1 branch. And there also a notice message inform me that i'm behind several commits in the master branch.
+```
+PS C:\Users\Legion\Documents\GitHub\devopsTP1> git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+```
